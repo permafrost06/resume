@@ -13,6 +13,9 @@ docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex zahin_azmayeen_resume.tex
 ```
 
+### Preview
+![image](https://github.com/user-attachments/assets/09c0162b-8ac0-4999-875a-37e50e8a6bfb)
+
 ### License
 
 Format is MIT but all the data is owned by repository owner.
