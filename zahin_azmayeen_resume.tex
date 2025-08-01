@@ -102,7 +102,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[4]{\resumeItemNormal{\href{#1}{\textbf{\underline{#2}} $|$ \emph{#3}}}{#4}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItemNormal{\textbf{#1}}{#2}\vspace{-4pt}}
 \newcommand{\projectWithLinkAndTech}[3]{\href{#1}{\textbf{\underline{#2}} $|$ \emph{#3}}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -128,6 +128,44 @@
 \end{center}
 
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer (Remote)}{Mar. 2024 -- Present}
+      {Dotcamp}{Company based in NY, USA}
+      \resumeItemListStart
+        \resumeItem{\projectWithLinkAndTech{https://github.com/DotCamp/tableberg}{Tableberg}{React, Redux, Typescript, Monorepo}}{Tableberg is a table builder plugin for the WordPress block editor. Developed the product from scratch and led further development.}
+        \resumeItem{WPP Deployer $|$ Docker, Golang}{Created a CI/CD pipeline for accelerating testing procedure by introducing automation. When new plugin code is pushed to GitHub, a wordpress site pre-configured with testing data and the latest version of the plugin gets deployed.}
+        \resumeItem{\projectWithLinkAndTech{https://github.com/DotCamp/Ultimate-Blocks/}{Ultimate Blocks}{React, PHP}}{Ultimate Blocks is a collection of blocks for the WordPress block editor. Mitigated major architectural limitations that caused significant bugs and hindered development.}
+        \resumeItem{\projectWithLinkAndTech{https://github.com/DotCamp/wp-table-builder}{WP Table Builder}{JS, PHP, Vue}}{WP Table Builder is a table builder plugin for WordPress. Finalized strategy to overhaul codebase and architecture enabling development of new advanced features.}
+        \resumeItem{Infrastructure overhaul $|$ \emph{CI/CD, Monorepo, Puppeteer}}{Implemented a modernized development workflow by implementing standard practices including monorepo, CI/CD, and E2E testing across all products. This reduced code duplication which was a regular source of bugs and improved developer productivity.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer (Remote)}{Mar. 2023 -- Feb. 2024}
+      {Dotcamp}{Company based in NY, USA}
+      \resumeItemListStart
+        \resumeItem{\projectWithLinkAndTech{https://github.com/DotCamp/wp-table-builder}{WP Table Builder}{JS, PHP, Vue}}{WP Table Builder is a table builder plugin for WordPress. Worked on adding new backwards compatible features and fixes to legacy codebase. Developed a system to streamline backwards compatibility. Explored strategies to make the legacy codebase modern and efficient.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance}{Jan. 2021 -- Present}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{\projectWithLinkAndTech{https://github.com/permafrost06/diagman}{Diagman}{Vue, Tauri, CF Worker, Turso, Drizzle}}
+        {Patient management software for a diagnostic centre. Led development and planning. Deployed using serverless technology.}
+        \resumeItem{\projectWithLinkAndTech{https://github.com/permafrost06/dknck}{Sales Software}{Laravel, Vue, MySQL}}
+        {Sales software for multiple clothing shops. Led development, planning, and deployment. Deployed in self hosted servers.}
+        \resumeItem{Thesis Coding $|$ \emph{Matlab, Arduino, Python, Javascript}}
+        {Wrote a simulation program for a master's thesis paper. It analyzes sensor data using Pearson Correlation, Euclidean Distance, NSGA-II, and Monte-Carlo simulation. It is highly optimized and capable of running hundreds of times per second on low end hardware. Assisted in developing a bachelor's thesis and coded multiple ESP32 boards to create a star BLE network and transmit sensor data between them. Created a web portal to display the sensor data and stress test the network.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -137,59 +175,21 @@
   \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Senior Software Engineer (Remote)}{Mar. 2024 -- Present}
-      {Dotcamp}{Company based in NY, USA}
-      \resumeItemListStart
-        \resumeItem{Server Management}{Introduced and maintained cloud servers to support website deployments, discord bots, VPN etc. This unlocked new workflows and collaboration for the entire company.}
-        \resumeItem{Tableberg}{Tableberg is a table builder plugin for the WordPress block editor. Developed the product from scratch and led further development.}
-        \resumeItem{Ultimate Blocks}{Ultimate Blocks is a collection of blocks for the WordPress block editor. Mitigated major architectural limitations that caused significant bugs and hindered development.}
-        \resumeItem{WP Table Builder}{WP Table Builder is a table builder plugin for WordPress. Finalized strategy to overhaul codebase and architecture enables development of new advanced features.}
-        \resumeItem{Dev Environment}{Implemented a modernized development workflow by adopting standard practices including monorepo, CI/CD, and E2E testing across all products. This reduced code duplication which was a regular source of bugs.}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Software Engineer (Remote)}{Mar. 2023 -- Feb. 2024}
-      {Dotcamp}{Company based in NY, USA}
-      \resumeItemListStart
-        \resumeItem{WP Table Builder}{WP Table Builder is a table builder plugin for WordPress. Worked on adding new backwards compatible features and fixes to legacy codebase. Developed a system to streamline backwards compatibility. Explored strategies to make the legacy codebase modern and efficient.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Engineer}{Jan. 2021 -- Present}
-      {Freelance}{}
-      \resumeItemListStart
-        \resumeItem{\projectWithLinkAndTech{https://github.com/permafrost06/diagman}{Diagman}{Vue, Tauri, CF Worker, Turso, Drizzle}}
-        {Patient management software for a pathology diagnostic centre. Led development and planning. Deployed using serverless technology.}
-        \resumeItem{\projectWithLinkAndTech{https://github.com/permafrost06/dknck}{DKNCK}{Laravel, Vue, MySQL}}
-        {Sales software for multiple clothing shops. Led development, planning, and deployment. Deployed in self hosted servers.}
-        \resumeItem{Website Audit}
-        {Performed a technical audit and generated a report for a WordPress website that suffered from poor performance. Developed software to quantify performance. Uncovered an attack on the website during the process.}
-        \resumeItem{Thesis Coding I $|$ \emph{Matlab}}
-        {Wrote a simulation program for a master's thesis paper. It analyzes sensor data using Pearson Correlation, Euclidean Distance, NSGA-II, and Monte-Carlo simulation. It is highly optimized and capable of running hundreds of times per second on low end hardware.}
-        \resumeItem{Thesis Coding II $|$ \emph{Arduino, Python, Javascript}}
-        {Assisted in developing a bachelor's thesis and coded multiple ESP32 boards to create a star BLE network and transmit sensor data between them. Created a web portal to display the sensor data and stress test the network.}
-      \resumeItemListEnd
-
-
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
+%-----------TEHCNICAL SKILL-----------
+\section{Technical Skill}
     \resumeSubHeadingListStart
-      \resumeSubItem{https://github.com/permafrost06/escpos-printer}{escpos-printer}{Golang}
-      {Windows program to print a receipt using escpos commands with server capabilities.}
-      \resumeSubItem{https://github.com/permafrost06/wpp-deployer}{wpp-deployer}{Golang, Shell}
-      {This program works in tandem with a github app to deploy a WordPress plugin on a testing site when triggered.}
-      \resumeSubItem{https://github.com/permafrost06/pc-remote}{pc-remote}{Golang, Arduino/C++, Javascript}
-      {A system to control and monitor the power state of a home server. Utilizes an ESP8266 wired to the server motherboard.}
-      \resumeSubItem{https://github.com/permafrost06/tptools}{tptools}{Python}
-      {A library to access and modify tp-link router settings.}
+      \resumeSubItem{Programming languages}
+      {TypeScript, JavaScript, PHP, Golang, Python, Bash, Kotlin}
+      \resumeSubItem{Frontend Technologies}
+      {React, Redux, Tanstack Query, Vue, Nuxt, Pinia, Tailwind, SCSS}
+      \resumeSubItem{Backend Technologies}
+      {Express, Laravel, Flask, Firebase}
+      \resumeSubItem{Database Management}
+      {MySQL, SQLite, IndexedDB, PouchDB, Firebase firestore, Drizzle}
+      \resumeSubItem{Other Web Technologies}
+      {Vite, Webpack, PNPM, PWA, Service Workers, Webhooks, Websockets, Zod}
+      \resumeSubItem{Version Control}
+      {Git, GitHub, Gitlab}
     \resumeSubHeadingListEnd
 
 
